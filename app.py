@@ -7,6 +7,7 @@ from flask_sqlalchemy import SQLAlchemy # Import flask-sqlalchemy
 app = Flask(__name__) 
 
 
+@app.route("/")
 def index() :
     return "testing 123"
 
