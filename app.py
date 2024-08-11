@@ -1,5 +1,5 @@
 # imports 
-from flask import Flask  # Import Flask 
+from flask import Flask, render_template  # Import Flask 
 # from flask_scss import Scss  # importing Flask Sass
 # from flask_sqlalchemy import SQLAlchemy # Import flask-sqlalchemy 
 
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index() :
-    return "Hello World"
+    return render_template("index.html")
 
 if __name__ == '__main__' :
     app.run(debug=True)
