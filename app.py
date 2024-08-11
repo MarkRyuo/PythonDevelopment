@@ -11,3 +11,5 @@ app = Flask(__name__)
 def index() :
     return "testing 123"
 
+if __name__ == '__main__' :
+    
