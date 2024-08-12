@@ -11,7 +11,7 @@
 # Leasons
 
 ## Chapter 1: Basic Setup 
- - Virtual Environmentz 
+ - Virtual Environments
  - Packages & Dependencies 
  - Initial Flask App
  - Project Structure & Setup
