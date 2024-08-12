@@ -23,7 +23,6 @@ Make a requirements text file, these are the dependencies and packages that anyo
 
  $ pip freeze > requirements.txt 
  
- 
 Create a folder name: static 
  - static folder is use for bunch of file like css, js files.
  
