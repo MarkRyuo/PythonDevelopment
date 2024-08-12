@@ -6,6 +6,7 @@
     - Advance OOP
     - Docker
     - Flask 
+    - Database 
 
 # Leasons
 
