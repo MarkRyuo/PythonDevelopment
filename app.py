@@ -7,7 +7,7 @@ from flask import Flask, render_template  # Import Flask
 app = Flask(__name__) 
 
 
-@app.route("Index")
+@app.route("/Index") # always add / for route 
 def index() :
     return render_template("index.html")
 
