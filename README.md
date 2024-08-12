@@ -36,13 +36,9 @@
  - Add any and all CSS styling 
  - Finalize any final ideas 
 
-
-# Version by Branch 
  
-## Versions 
+# Versions 
 
-### V.1 Latest 
+## V.1 Latest 
 
     - Version 1 
-
-  
