@@ -34,4 +34,4 @@ Create a folder name: templates
    - ex. code
    @app.route("/")
 	def index() :
-    		return render_template("index.html") # Use render template
+    		return render_template("index.html") # Use render template("example.html")
