@@ -18,9 +18,10 @@
  - Testing 
 
 ## Chapter 2 : Docker in Python 
-    - 
+    - Understanding of docker 
+    - Basic of docker 
  
-## Chapter 2: Database Model 
+## Chapter 3: Database Model 
  - Create a Model 
  
  A model is a row of data in our database. This will essentially collect and hold data for each item.
