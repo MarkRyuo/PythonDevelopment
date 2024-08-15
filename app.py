@@ -7,11 +7,11 @@ from flask import Flask, render_template  # Import Flask
 app = Flask(__name__) 
 
 
-@app.route("/Index") # always add / for route 
+@app.route("/") # always add / for route 
 def index() :
     return render_template("index.html")
 
-@app.route("/") 
+@app.route("/homepage") 
 def homepage():
     return render_template("Homepage.html")
 
