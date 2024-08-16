@@ -2,9 +2,8 @@
 from email.policy import default
 from flask import Flask, render_template  # Import Flask 
 from flask_scss import Scss # importing Flask Sass
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
-# * Import flask-sqlalchemy 
+from flask_sqlalchemy import SQLAlchemy # * Import flask-sqlalchemy
+from datetime import datetime 
 
 # My app 
 app = Flask(__name__) 
