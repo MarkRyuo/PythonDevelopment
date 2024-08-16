@@ -3,6 +3,7 @@ from flask import Flask, render_template  # Import Flask
 from flask_scss import Scss
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Nullable  # importing Flask Sass
+from datetime import datetime
 # from flask_sqlalchemy import SQLAlchemy # Import flask-sqlalchemy 
 
 # My app 
