@@ -14,6 +14,8 @@ db = SQLAlchemy(app)
 
 # * Data class - row of data
 class MyTask(db.Model) :
+    id
+    content 
 
 
 
