@@ -1,5 +1,5 @@
 # imports 
-from flask import Flask, render_template  # * Import Flask 
+from flask import Flask, render_template  # * Import Flask and render_template for html
 from flask_scss import Scss # * importing Flask Sass
 from flask_sqlalchemy import SQLAlchemy # * Import flask-sqlalchemy
 from datetime import datetime 
