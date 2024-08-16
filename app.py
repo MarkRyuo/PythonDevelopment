@@ -1,13 +1,16 @@
 # imports 
 from flask import Flask, render_template  # Import Flask 
-from flask_scss import Scss  # importing Flask Sass
+from flask_scss import Scss
+from flask_sqlalchemy import SQLAlchemy  # importing Flask Sass
 # from flask_sqlalchemy import SQLAlchemy # Import flask-sqlalchemy 
 
 # My app 
 app = Flask(__name__) 
 Scss(app) # * for importing the Scss
 
+# configure the SQLite database, relative to the app instance folder
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
+db = SQLAlchemy(app)
 
 @app.route("/") # always add / for route 
 def index() :
