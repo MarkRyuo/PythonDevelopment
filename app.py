@@ -20,7 +20,7 @@ class MyTask(db.Model) :
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(100), Nullable=False)
     complete = db.Column(db.Integer)
-    created = db.Column(db.DateTime, default=datetime)
+    created = db.Column(db.DateTime, default=datetimew)
 
 
 
