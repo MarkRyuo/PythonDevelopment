@@ -25,6 +25,8 @@ class MyTask(db.Model) :
 
 
 
+
+
 @app.route("/") # always add / for route 
 def index() :
     return render_template("index.html")
