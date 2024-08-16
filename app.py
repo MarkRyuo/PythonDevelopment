@@ -16,7 +16,7 @@ db = SQLAlchemy(app)
 class MyTask(db.Model) :
     id = db.Column()
     content = db.Column()
-    complete
+    complete = db.Column()
     created 
 
 
