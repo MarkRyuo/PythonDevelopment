@@ -5,7 +5,7 @@ from flask_scss import Scss  # importing Flask Sass
 
 # My app 
 app = Flask(__name__) 
-Scss(app)
+Scss(app) # * for importing the Scss
 
 @app.route("/") # always add / for route 
 def index() :
