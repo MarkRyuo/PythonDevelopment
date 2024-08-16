@@ -17,7 +17,7 @@ class MyTask(db.Model) :
     id = db.Column()
     content = db.Column()
     complete = db.Column()
-    created 
+    created = db.Column()
 
 
 
