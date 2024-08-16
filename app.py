@@ -7,6 +7,8 @@ from flask_scss import Scss  # importing Flask Sass
 app = Flask(__name__) 
 Scss(app) # * for importing the Scss
 
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
+
 @app.route("/") # always add / for route 
 def index() :
     return render_template("index.html")
