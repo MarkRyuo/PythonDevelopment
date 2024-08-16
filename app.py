@@ -12,6 +12,11 @@ Scss(app) # * for importing the Scss
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 db = SQLAlchemy(app)
 
+
+
+
+
+
 @app.route("/") # always add / for route 
 def index() :
     return render_template("index.html")
