@@ -1,7 +1,8 @@
 # imports 
 from flask import Flask, render_template  # Import Flask 
 from flask_scss import Scss
-from flask_sqlalchemy import SQLAlchemy  # importing Flask Sass
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import Nullable  # importing Flask Sass
 # from flask_sqlalchemy import SQLAlchemy # Import flask-sqlalchemy 
 
 # My app 
@@ -15,7 +16,7 @@ db = SQLAlchemy(app)
 # * Data class - row of data
 class MyTask(db.Model) :
     id = db.Column(db.Integer, primary_key=True)
-    content = db.Column(db.String())
+    content = db.Column(db.String(100), Nullable=True)
     complete = db.Column()
     created = db.Column()
 
