@@ -3,7 +3,6 @@ from email.policy import default
 from flask import Flask, render_template  # Import Flask 
 from flask_scss import Scss # importing Flask Sass
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import Nullable  
 from datetime import datetime
 # from flask_sqlalchemy import SQLAlchemy # Import flask-sqlalchemy 
 
@@ -17,7 +16,7 @@ db = SQLAlchemy(app)
 
 # * Data class - row of data
 class MyTask(db.Model) :
-    
+
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(100), Nullable=False)
     complete = db.Column(db.Integer, default=0)
