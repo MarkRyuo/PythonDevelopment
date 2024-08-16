@@ -9,7 +9,7 @@ app = Flask(__name__)
 Scss(app) # * for importing the Scss
 
 # configure the SQLite database, relative to the app instance folder
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 db = SQLAlchemy(app)
 
 @app.route("/") # always add / for route 
