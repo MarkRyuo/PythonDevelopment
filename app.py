@@ -14,8 +14,8 @@ db = SQLAlchemy(app)
 
 # * Data class - row of data
 class MyTask(db.Model) :
-    id = db.Column()
-    content = db.Column()
+    id = db.Column(db.Integer, primary_key=True)
+    content = db.Column(db.String())
     complete = db.Column()
     created = db.Column()
 
