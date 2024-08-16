@@ -1,8 +1,9 @@
 # imports 
+from email.policy import default
 from flask import Flask, render_template  # Import Flask 
-from flask_scss import Scss
+from flask_scss import Scss # importing Flask Sass
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import Nullable  # importing Flask Sass
+from sqlalchemy import Nullable  
 from datetime import datetime
 # from flask_sqlalchemy import SQLAlchemy # Import flask-sqlalchemy 
 
@@ -19,7 +20,7 @@ class MyTask(db.Model) :
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(100), Nullable=False)
     complete = db.Column(db.Integer)
-    created = db.Column(db.DateTime)
+    created = db.Column(db.DateTime, default=datetime)
 
 
 
