@@ -4,7 +4,7 @@ from flask import Flask, render_template  # Import Flask
 from flask_scss import Scss # importing Flask Sass
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-# from flask_sqlalchemy import SQLAlchemy # Import flask-sqlalchemy 
+# * Import flask-sqlalchemy 
 
 # My app 
 app = Flask(__name__) 
